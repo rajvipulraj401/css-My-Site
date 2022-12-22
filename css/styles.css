@@ -1,0 +1,230 @@
+/* who what , how   kisko change krna hai kya change krna hai kaise change krna hai */
+
+
+/* div{ /* abhi toh div me change krna hai na*/
+/*  background-color: #A3C7D6;
+}
+*/
+
+
+/* SARA KA DEFAULT SETTING HOTA HAI
+ JAISE body ka tumko kuch kuch space tha
+ waise hi ab h1 tag ka bhi rhta hai
+ ki tum iske paas kitna bagal me mtlb upar neeche rkh sakte ho
+ element
+*/
+
+h1{
+/*  margin-top: 0;
+*/ /* width: 10%; */
+  /*margin: 0 auto 0 auto;
+  /* iska css docs check kro on mdn on margin*/
+   /*margin:0 auto;*/
+
+  /* margin-top: 50px;*/
+   margin: 50px,auto,0,auto;
+   font-family: 'Sacramento', serif;
+   font-size: 5.6rem;
+   color:  #66BFBF;
+   line-height: 2;/*there is no unit in line height only digit*/
+
+}
+body{
+  margin: 0;
+  text-align: center;
+
+  /*font-family: "Helvetica Neue" ,Helvetica,Arial,sans-serif ;
+  */
+font-family: 'Josefin Sans', sans-serif;
+
+color: #40514E;
+
+font-size: 1.2rem;
+}
+
+.profile{
+  width: 100%;
+  margin: 100px auto 100px auto;
+}
+/* ye jo mera i am front end developer likha hua hai na uska maine kiya hai 100 percent .
+  aur uska daal diya hai */
+  .dp{
+    width: 15%;
+  }
+
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+
+  color: #66BFBF; /* this is used to include color the font text . */
+   font-weight: normal;/*this lightens the boldness of the font*/
+ padding: 10px;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E
+;
+}
+
+h4{
+  font-family: 'Montserrat', sans-serif;
+}
+.top-container{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+a{
+  color: #11999E;
+}
+
+.bottom-cloud{
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+.top-cloud{
+  position: absolute;
+  right: 300px;
+  top: 40px;
+ }
+
+.middle-container{
+
+margin: 100px 0; /* top and bottom 100px aur  left aur right 0 margin   hai yaha*/
+}
+.bottom-container{
+ background-color: #66BFBF;
+ padding: 50px 0 20px  /* here we are padding out our footer waha neeche jaha humne @2023
+  kr ke jo banaya hai na waha poora color nahi jaa rha kyunki  BROWSER ka default style hai jiske wajah
+  se thora margin hai bottom me 16px */
+}
+
+.skill-row{
+  width:50%;
+
+  margin:100px auto 100px auto; /* there is no need of comman here
+    aise hi property change hota hai  css me MAINE upar aur NEECHE  100px ka gap kr diya hai aur LEFT AUR RIGHT me auto krke center rkha hai .
+    */
+    text-align: left;
+    line-height: 2;
+    /*HUMLOG  text- row  jo class hai usme jitna text hai un sabko
+     left me show kr rhe hai isse */
+
+}
+.development{
+width:45%;
+  float: left;
+  /* NOW WE WANT TO SEPARATE THE TEXT AND FIGURE AND there are two ways
+   1) adding margin - but it is difficult here because they are separted here
+     kyunki maine h3 liya hai  FRONTEND TEXT ME  .AUR JO ANDAR likha hai wo PARAAGRAPH ME HAI <p> </p>..
+      WELL THERE is a way we can take a div and add a left margin .  .
+ but SEEDHA IMAGE ME KUCH WIDTH DAAL DO .
+   2) padding -*/
+   margin-right: 30px;
+}
+.workout{
+  width:35%; /* Maine image jo daala hai skills me uska class name me jaake
+  width me change kiya hai aur wo row ka 25% kr diye hai jaise poora workout section wale ka
+    skill row ka 25 % ho gya hai .
+
+    */
+
+    float: right;
+    margin-left:  30px;
+}
+
+/*we are using inline elements and here we
+are using span */
+.pro{
+  /* how to italicaze in css*/
+  text-decoration: underline;
+
+
+}
+.dev-discription{
+  clear: left;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+
+p{
+  line-height: 2;
+}
+
+hr{
+  border:6px dotted #DEB887 ; /* YAHA height  rkh rhe hai 6px*/
+  /* HUM LOG YAHA HORIZONTAL ROW KO DOTTED BANA RHE HAI AUR
+   USKA COLOR CHANGE KR RHE HAI */
+   border-bottom : none;
+   width: 4%;
+   margin: 100px auto;
+}
+.contact-message {
+  width:40%;
+  margin:40px auto 60px;
+}
+a{
+  color: #11999E;
+   font-family: 'Montserrat', sans-serif;
+   margin: 10px 20px;
+   text-decoration: none; /* YAHA SE mai anchor tag se wo underline wala hata rha HORIZONTALjo
+   BROWSER apne se laga deta hai isse hata diya*/
+}
+ a:hover{
+     color:#eaf6f6;
+   } /* we are using pseudo classes to change design of anchor tag*/
+
+.copyright{
+  color:#eaf6f6;
+ font-size: .75rem;
+   padding: 20px 0;
+ /* ekdm neeche kr diye copyright wale ko
+  and YAHA .75 PX USE NAHI kr sakte hai kyunki 1px se km nahi hota hai  aur .75 rem
+  mtlb ek trh se 75 %
+  
+  .75 px is less than 1 pixel, and that is impossible... you can use 10px, for example.
+
+(.75rem is basically 0.75% of the parent size, IE if the body defaults to 24px, then .075rem is  = 18px,
+
+and the reason to use rem instead of writing 18px is that if the body's default size changes
+(for any reason, such as a different screen size), then the selected
+.75 rem will dynamically change with it to the new 75% of the new body size)
+ */
+}
+
+.btn {   /* HUMLOG pehle hi class banaye hai btn naam se html me iske
+  wajah se change kr liye hai */
+
+
+
+    background: #34cbd9;
+    background-image: -webkit-linear-gradient(top, #34cbd9, #2ca3b8);
+    background-image: -moz-linear-gradient(top, #34cbd9, #2ca3b8);
+    background-image: -ms-linear-gradient(top, #34cbd9, #2ca3b8);
+    background-image: -o-linear-gradient(top, #34cbd9, #2ca3b8);
+    background-image: linear-gradient(to bottom, #34cbd9, #2ca3b8);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #3ceafa;
+    background-image: -webkit-linear-gradient(top, #3ceafa, #8134d9);
+    background-image: -moz-linear-gradient(top, #3ceafa, #8134d9);
+    background-image: -ms-linear-gradient(top, #3ceafa, #8134d9);
+    background-image: -o-linear-gradient(top, #3ceafa, #8134d9);
+    background-image: linear-gradient(to bottom, #3ceafa, #8134d9);
+    text-decoration: none;
+  }
